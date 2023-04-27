@@ -1,0 +1,425 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins';
+}
+
+header {
+    width: 100%;
+    z-index: 1;
+    height: 70px;
+    background-color: #eceaea;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .headerLeft {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .headerLeft .logo {
+    margin: 0 30px;
+    display: flex;
+    align-items: center;
+}
+
+header .headerLeft .logo img {
+    width: 50px;
+}
+
+header .headerLeft .logo span {
+    font-size: 40px;
+    line-height: 50px;
+    font-weight: 900;
+    background: linear-gradient(to right, #ff6b08, #ff9c08, #ff6b08);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+header .headerLeft .links {
+    margin-left: 40px;
+    height: 70px;
+    display: flex;
+    align-items: flex-end;
+}
+
+header .headerLeft .links .linkItems {
+    list-style: none;
+    padding: 10px;
+    margin-right: 8px;
+    color: #f56a0d;
+    font-size: large;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-decoration: none;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    transition: 0.4s;
+}
+
+header .headerLeft .links .linkItems:hover {
+    color: #cf5707;
+    transform: scale(1.1);
+    background-color: #c7c6c6;
+}
+
+header .headerRight {
+    display: flex;
+    align-items: center;
+}
+
+header .headerRight img {
+    width: 30px;
+    margin-right: 25px;
+}
+
+header .headerRight .authentication {
+    list-style: none;
+    font-weight: bold;
+    font-size: large;
+    color: blue;
+    margin-right: 30px;
+}
+
+.welcomePage {
+    height: 570px;
+    background-image: url('https://guts.pk/wp-content/uploads/2020/07/store2-slider-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-color: #ff9c08;
+    position: relative;
+    text-transform: uppercase;
+    padding-top: 120px;
+    transition: 0.3;
+}
+
+.welcomePage .welcomeTitle {
+    margin-left: 70px;
+    color: #414141;
+    font-family: 'Quicksand';
+    font-size: 100px;
+    letter-spacing: -7px;
+}
+
+.welcomePage .welcomeTitle2 {
+    color: white;
+    margin-left: 70px;
+    margin-top: -60px;
+    font-size: 150px;
+    font-weight: 900;
+    letter-spacing: -3px;
+}
+
+.welcomePage p {
+    margin-left: 90px;
+    width: 170px;
+    line-height: 45px;
+    font-size: 20px;
+    padding-left: 10px;
+    font-weight: bold;
+    color: white;
+    background-color: black;
+}
+
+.signUpContainer {
+    display: none;
+}
+
+.signUpContainer .note,
+.signUpContainer .note1 {
+    width: 190px;
+    position: absolute;
+    color: red;
+    top: 30%;
+    text-align: right;
+}
+
+.signUpContainer .note {
+    left: 150px;
+}
+
+.signUpContainer .note1 {
+    right: 150px !important;
+}
+
+.signUpContainer input {
+    caret-color: red;
+}
+
+.signUpContainer .container {
+    position: relative;
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 350px;
+    height: 450px;
+    border-radius: 20px;
+    padding: 40px;
+    box-sizing: border-box;
+    background: #ecf0f3;
+    box-shadow: 14px 14px 20px #cbced1, -14px -14px 20px white;
+}
+
+.signUpContainer .brand-logo {
+    height: 100px;
+    width: 100px;
+    background: url("https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Android_O_Preview_Logo.png/1024px-Android_O_Preview_Logo.png");
+    background-size: 100%;
+    margin: auto;
+    border-radius: 50%;
+    box-sizing: border-box;
+    box-shadow: 7px 7px 10px #f5ab21, -7px -7px 10px white;
+}
+
+.signUpContainer .inputs {
+    text-align: left;
+    margin-top: 30px;
+}
+
+.signUpContainer label,
+.signUpContainer input,
+.signUpContainer button {
+    display: block;
+    width: 100%;
+    padding: 0;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.signUpContainer label {
+    margin-bottom: 4px;
+}
+
+.signUpContainer label:nth-of-type(2) {
+    margin-top: 12px;
+}
+
+.signUpContainer input {
+    background: #ecf0f3;
+    padding: 10px;
+    padding-left: 20px;
+    height: 50px;
+    font-size: 14px;
+    border-radius: 50px;
+    box-shadow: inset 6px 6px 6px #cbced1, inset -6px -6px 6px white;
+}
+
+.signUpContainer button {
+    color: white;
+    margin-top: 20px;
+    background: #1da1f2;
+    height: 40px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: 900;
+    box-shadow: 6px 6px 6px #cbced1, -6px -6px 6px white;
+    transition: 0.5s;
+}
+
+.adminContainer {
+    background-image: url('https://img.freepik.com/free-vector/gradient-smooth-background_79603-1782.jpg?w=2000');
+    background-repeat: repeat-y;
+    background-size: 100%;
+    padding-top: 40px;
+    min-height: 555px;
+    display: flex;
+    display: none;
+}
+
+.adminContainer .adminBox {
+    display: none;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.adminContainer .adminBox #editMode {
+    display: none;
+    transition: 0.4s;
+}
+
+.adminContainer .adminBox .adminCardCreater {
+    margin: 10px;
+    width: 350px;
+    padding: 5px 0 5px 20px;
+    height: 210px;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(to right, #ffc46d, #66a1fa);
+}
+
+.adminContainer .adminBox .adminCardCreater h1 {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    margin-right: 10px;
+}
+
+.adminContainer .adminBox .adminCardCreater div {
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+.adminContainer .adminBox .adminCardCreater div label {
+    width: 310px;
+    margin-bottom: 5px;
+}
+
+.adminContainer .adminBox .adminCardCreater div label input {
+    float: right;
+}
+
+.adminContainer .adminBox .adminCardCreater div button {
+    padding: 5px 14px;
+    margin-left: 80px;
+    background: #3a2193;
+    color: white;
+    font-weight: 700;
+    font-size: 17px;
+    border: none;
+    border-radius: 8px;
+    position: absolute;
+    bottom: 15px;
+}
+
+.adminContainer .cardContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.adminContainer .cardContainer .card {
+    margin: 10px;
+    width: 390px;
+    padding: 5px 0 5px 30px;
+    height: 230px;
+    border-radius: 10px;
+    position: relative;
+    background-color: #eceaea;
+    overflow: hidden;
+    border-top-left-radius: 150px;
+}
+
+.adminContainer .cardContainer .card .productTag {
+    font-size: 15px;
+    font-weight: 700;
+    margin-top: 30px;
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    z-index: 1;
+}
+
+.adminContainer .cardContainer .card .productName {
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: bold;
+    background: linear-gradient(to right, #ff6b08, #ff9c08, #ff6b08);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: absolute;
+    top: 85px;
+    z-index: 1;
+}
+
+.adminContainer .cardContainer .card .productCost {
+    font-size: 25px;
+    font-weight: bold;
+    position: absolute;
+    bottom: 35px;
+    z-index: 1;
+}
+
+.adminContainer .cardContainer .card .productBuy {
+    padding: 4px 9px;
+    font-weight: 600;
+    position: absolute;
+    bottom: 10px;
+    z-index: 1;
+    background: orange;
+    border: none;
+    border-radius: 8px;
+}
+
+.adminContainer .cardContainer .card .productImg {
+    width: 420px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transition: 0.8s;
+}
+
+.adminContainer .cardContainer .card .editProduct,
+.adminContainer .cardContainer .card .removeProduct {
+    width: 20px;
+    position: absolute;
+    right: 5px;
+    top: 7px;
+}
+
+.adminContainer .cardContainer .card .editProduct {
+    right: 30px;
+}
+
+.adminContainer .cardContainer .card:hover .productImg {
+    width: 500px;
+}
+
+.cartContainer {
+    z-index: 2;
+    width: 270px;
+    padding: 10px 10px 30px 10px;
+    position: absolute;
+    top: 70px;
+    right: 50px;
+    background-image: url('https://www.xtrafondos.com/wallpapers/vertical/degradado-difuminado-verde-7936.jpg');
+    background-size: 100%;
+    background-repeat: repeat-y;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    box-shadow: inset 0 0 10px #000;
+    display: none;
+}
+
+.cartContainer h4 {
+    text-align: center;
+}
+
+.cartContainer li {
+    font-weight: bold;
+    width: 93%;
+    margin-left: 20px;
+}
+
+.cartContainer li span {
+    float: right;
+}
+
+.cartContainer p {
+    font-weight: bold;
+    float: right;
+    margin: 0;
+}
+
+footer {
+    margin: 50px 50px 0 50px;
+    display: flex;
+    justify-content: space-between;
+    /* background-color: #eceaea; */
+    border-top-left-radius: 18px;
+    border-top-right-radius: 18px;
+    box-shadow: 0 0 20px gray;
+}
+
+footer .footerElements {
+    width: 25%;
+    margin: 20px 30px 0 30px;
+    padding: 20px;
+}

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shopping</title>
+  <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <link rel="stylesheet" href="shopping.css" />
+</head>
+
+<body>
+
+
+
+
+  <!-- Header -->
+  <header>
+    <div class="headerLeft">
+      <div class="logo">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Android_O_Preview_Logo.png/1024px-Android_O_Preview_Logo.png" />
+        <marquee direction="left"><span>MyCart</span></marquee>
+      </div>
+      <div class="links">
+        <li class="linkItems" id="checkhome" onclick="homeFunction()">Home</li>
+        <li class="linkItems" onclick="shopFunction()">Shop</li>
+        <li class="linkItems" onclick="aboutUsFunction()" id="aboutUs">About Us</li>
+      </div>
+    </div>
+
+    <div class="headerRight">
+      <img onclick="cartList()" src="https://www.freeiconspng.com/thumbs/cart-icon/basket-cart-icon-27.png" />
+
+      <li class="authentication" onclick="signUpFunction()">SignuUp</li>
+    </div>
+  </header>
+
+  <!-- Welcome Page -->
+  <div class="welcomePage">
+    <div class="welcomeTitle">Live for</div>
+    <div class="welcomeTitle2">fashion</div>
+    <p>Save upto 50%</p>
+  </div>
+
+  <!-- SignUp Form -->
+  <div class="signUpContainer">
+    <p class="note">Note: User Id = 'user' Password = '123'</p>
+    <p class="note1">Note: Admin Id = 'admin' Password = '1234'</p>
+    <div class="container">
+      <div class="brand-logo"></div>
+      <div class="inputs">
+        <label>USERNAME</label>
+        <input type="text" id="userId" placeholder="User / Admin-user" />
+        <label>PASSWORD</label>
+        <input type="password" id="userPass" placeholder="password" />
+        <button type="submit" onclick="userAuth()">LOGIN</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Shopping Page -->
+  <div class="adminContainer">
+    <div class="adminBox">
+      <div class="adminCardCreater">
+        <h1>Admin Access Only</h1>
+        <div>
+          <label>Product Name:
+            <input type="text" id="prodName" placeholder="Dress" /></label>
+          <label>Product Tagline:
+            <input type="text" id="prodTag" placeholder="Tagline" /></label>
+          <label>Product Cost:
+            <input type="number" id="prodCost" placeholder="1999/-" /></label>
+          <label>Image URL:
+            <input type="text" id="prodImg" placeholder="www.google.png" /></label>
+          <button class="btn btn-dark" onclick="addProduct()">
+            Add Product
+          </button>
+        </div>
+      </div>
+
+      <div class="adminCardCreater" id="editMode">
+        <h1>Edit Product</h1>
+        <div>
+          <label>Product Name: <input type="text" id="editProdName" /></label>
+          <label>Product Tagline: <input type="text" id="editProdTag" /></label>
+          <label>Product Cost: <input type="number" id="editProdCost" /></label>
+          <label>Image URL: <input type="text" id="editProdImg" /></label>
+          <button class="btn btn-dark" onclick="editProduct()">
+            Update Product
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Cards -->
+    <div class="cardContainer">
+      <!-- <div class="card">
+          <p class="productTag">productTag</p>
+          <p class="productName">productName</p>
+          <p class="productCost">₹productCost</p>
+          <button
+            class="productBuy"
+            onclick="addToCart(productName,productCost)"
+          >
+            Add to Cart
+          </button>
+          <img class="productImg" src="productImg" />
+          <img
+            class="editProduct"
+            onclick="getProduct(i)"
+            src="https://www.freeiconspng.com/thumbs/edit-icon-png/edit-new-icon-22.png"
+          />
+          <img
+            class="removeProduct"
+            onclick="deleteProduct(i)"
+            src="https://cdn-icons-png.flaticon.com/512/1345/1345874.png"
+          />
+        </div> -->
+    </div>
+  </div>
+
+  <!-- Cart page -->
+  <div class="cartContainer">
+    <h4>List of selected Items</h4>
+    <ol class="cartTray">
+      <!-- <li>
+          item <span>₹cost</span>
+        </li> -->
+    </ol>
+    <p>-----------------------------</p>
+    <p>Total Order : <span> ₹ <span class="totalOrderCost">0</span></span></p>
+  </div>
+
+
+
+  <!-- Footer -->
+  <footer>
+    <div class="footerElements information">
+      <h2>Infromation</h2>
+      <br />
+      <p>
+        Online Shopping Site for Fashion & Lifestyle in India. India's Fashion
+        Expert brings you a variety of footwear, Clothing, Accessories and
+        lifestyle products ...
+      </p>
+    </div>
+
+    <div class="footerElements userFeatures">
+      <h2>User Access</h2>
+      <br />
+      <li>can view all products</li>
+      <li>select products</li>
+      <li>buy products from cart</li>
+    </div>
+
+    <div class="footerElements adminFeatures">
+      <h2>Admin Access</h2>
+      <br />
+      <li>can add products</li>
+      <li>can remove products</li>
+      <li>can modify product's details</li>
+      <li>can buy products</li>
+    </div>
+  </footer>
+
+  <script src="shopping.js"></script>
+</body>
+
+</html>
